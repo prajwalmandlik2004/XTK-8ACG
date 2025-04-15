@@ -5,7 +5,7 @@ import io
 
 st.set_page_config(page_title="Code Generator", layout="centered")
 
-st.title("🔠 8 - Alpha Character Code Generator")
+st.title("🔠 8 - Alpha Code Generator")
 
 uploaded_file = st.file_uploader("Upload your base file (CSV or Excel)", type=["csv", "xlsx"])
 
