@@ -7,6 +7,8 @@ st.set_page_config(page_title="Code Generator", layout="centered")
 
 st.title("🔠 8 - Alpha Code Generator")
 
+
+
 uploaded_file = st.file_uploader("Upload your base file (CSV or Excel)", type=["csv", "xlsx"])
 
 if uploaded_file:
@@ -35,7 +37,7 @@ if uploaded_file:
             st.rerun()
 
         st.subheader("📝 Output Column Name")
-        target_column = st.text_input("Enter new column name to store generated code", value="CodeTRG")
+        target_column = st.text_input("Enter new column name to store generated code", value="")
 
         if st.button("🚀 Generate Code"):
             if column_inputs and target_column:
@@ -52,3 +54,5 @@ if uploaded_file:
 
     except Exception as e:
         st.error(f"❌ Error: {e}")
+
+
